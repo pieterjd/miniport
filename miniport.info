@@ -1,15 +1,18 @@
 
-name = My Bartik
-description = My adapted version of the standard Bartik theme. A flexible, recolorable theme with many regions.
+name = Miniport
+description = Drupal port of Miniport
 package = Core
 version = VERSION
 core = 7.x
 
-stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/ie7.css
+stylesheets[all][] = css/ie8.css
+stylesheets[all][] = css/ie9.css
+stylesheets[all][] = css/skel-noscript.css
+stylesheets[all][] = css/style-1000px.css
+stylesheets[all][] = css/style-desktop.css
+stylesheets[all][] = css/style-mobile.css
 stylesheets[all][] = css/style.css
-stylesheets[all][] = css/colors.css
-stylesheets[all][] = css/item.css
-stylesheets[print][] = css/print.css
 
 regions[header] = Header
 regions[help] = Help
@@ -33,10 +36,4 @@ regions[footer_fourthcolumn] = Footer fourth column
 regions[footer] = Footer
 
 settings[shortcut_module_link] = 0
-
-
-; Information added by Drupal.org packaging script on 2014-01-15
-version = "7.26"
-project = "drupal"
-datestamp = "1389815930"
 
