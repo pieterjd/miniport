@@ -6,7 +6,7 @@
 
 window._skel_config = {
 	preset: 'standard',
-	prefix: 'sites/all/themes/miniport/css/style',
+	prefix: '/sites/all/themes/miniport/css/style',
 	resetCSS: true,
 	breakpoints: {
 		'desktop': {

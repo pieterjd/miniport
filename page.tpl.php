@@ -94,6 +94,7 @@
 
 		<!-- Home -->
 			<div class="wrapper wrapper-style1 wrapper-first">
+				<!--
 				<article id="contact" class="container small">
 					<header>
 						<h2>Title</h2>
@@ -102,6 +103,7 @@
 					
 					
 				</article>
+				-->
 				<article>
 				  <div class="container">
 				    <?php print render($page['content']); ?>
