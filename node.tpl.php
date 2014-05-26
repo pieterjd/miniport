@@ -79,9 +79,8 @@
  */
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  Node template :)
-  <div class=".fa-clock-o"> clock test</div>
-  <span class=".fa-clock-o"> clock test</span>
+  
+  
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
     <h2<?php print $title_attributes; ?>>
@@ -91,9 +90,10 @@
   <?php print render($title_suffix); ?>
 
   <?php if ($display_submitted): ?>
-    <div class="meta submitted fa-clock-o">
+    <div class="meta submitted">
       <?php print $user_picture; ?>
-      <?php print $submitted; ?>
+      <span class="fa fa-clock-o">  <?php print $date; ?> </span>
+      <span class="fa fa-comment">  <?php print $comment_count; ?> </span>
     </div>
   <?php endif; ?>
 
