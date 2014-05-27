@@ -104,6 +104,37 @@
 					
 				</article>
 				-->
+				
+				<!-- header -->
+				<article class="container" id="top">
+					<div class="row">
+						<div class="8u">
+  						<?php if ($logo): ?>
+                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+                  <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+                </a>
+              <?php endif; ?>
+						</div>
+						<div class="4u">
+							<header>
+								<h1><?php print $site_name; ?></h1>
+								<p> <?php print $site_slogan;  ?></p>
+								<a href="#work" class="button button-big">Learn</a>
+							</header>
+							
+
+						</div>
+					</div>
+					<div class="row">
+            <div class="4u"></div>
+            <div class="8u">
+              <p> <?php print $site_slogan;  ?></p>
+            </div>
+					</div>
+				</article>
+
+    
+				<!-- content -->
 				<article>
 				  <div class="container">
 				    <?php print render($page['content']); ?>
