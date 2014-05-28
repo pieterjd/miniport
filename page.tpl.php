@@ -121,25 +121,31 @@
 								<p> <?php print $site_slogan;  ?></p>
 								<a href="#work" class="button button-big">Learn</a>
 							</header>
-							
-
 						</div>
-					</div>
+					</div><!--End header row-->
+					<!--Slogan row-->
 					<div class="row">
             <div class="4u"></div>
             <div class="8u">
               <p> <?php print $site_slogan;  ?></p>
             </div>
-					</div>
+					</div><!--End slogan row-->
 				</article>
 
     
-				<!-- content -->
-				<article>
-				  <div class="container">
-				    <?php print render($page['content']); ?>
-				  </div>
-				</article>
+				<!-- content with left sidebar-->
+				<div class="row">
+				  <div class="4u"><!--Left sidebard-->
+				    <?php print render($page['sidebar_first']); ?>
+				  </div><!--End left sidebar-->
+				  <div class="8u"><!--Content-->
+            <article>
+              <div class="container">
+                <?php print render($page['content']); ?>
+              </div>
+            </article>
+          </div><!--End content-->
+        </div> <!--End of content with left sidebar row-->
 			</div>
 
 		
