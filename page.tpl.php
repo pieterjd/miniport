@@ -105,7 +105,7 @@
 				</article>
 				-->
 				
-				<!-- header -->
+				<!-- Logo and slogan -->
 				<article class="container" id="top">
 					<div class="row">
 						<div class="8u">
@@ -131,6 +131,12 @@
             </div>
 					</div><!--End slogan row-->
 				</article>
+				<!-- end logo and slogan -->
+				<!-- header region-->
+				<div class="row">
+				  <?php print render($page['header']); ?>
+				</div>
+				<!--End header region-->
 
     
 				<!-- content with left sidebar if necessary-->
