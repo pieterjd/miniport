@@ -91,7 +91,6 @@
 
   <?php if ($display_submitted): ?>
     <div class="meta submitted">
-      <?php print $user_picture; ?>
       <span class="fa fa-clock-o">  <?php print $date; ?> </span>
       <span class="fa fa-comment">  <?php print $comment_count; ?> </span>
     </div>

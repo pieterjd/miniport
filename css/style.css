@@ -110,7 +110,7 @@
 			background: #282828;
 			color: #bbb;
 			box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.05), 0px 1px 0px 0px rgba(255,255,255,0.025);
-			width: 100%;
+			f: 100%;
 			-moz-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 			-webkit-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 			-o-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
