@@ -158,8 +158,21 @@
             </article>
           </div> <!--End of content without left sidebar row-->
         <?php endif; ?>
-        
-			</div> <!-- End div of wrapper element-->
+        <!-- the triptych part -->
+        <?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>
+          <div class="row">
+            <div class="4u">
+              <?php print render($page['triptych_first']); ?>
+            </div>
+            <div class="4u">
+              <?php print render($page['triptych_middle']); ?>
+            </div>
+            <div class="4u">
+              <?php print render($page['triptych_last']); ?>
+            </div>
+          </div> <!-- /#triptych, /#triptych-wrapper -->
+        <?php endif; ?>
+			</div> <!-- End div of page wrapper element-->
 
 		
 
