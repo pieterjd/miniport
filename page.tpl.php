@@ -168,6 +168,11 @@
             <div class="8u"><!--Content-->
               <article>
                 <div class="container">
+                  <?php if ($page['highlighted']): ?>
+                    <div id="highlighted">
+                      <?php print render($page['highlighted']); ?>
+                    </div>
+                  <?php endif; ?>
                   <?php print render($page['content']); ?>
                 </div>
               </article>
@@ -179,6 +184,11 @@
             
             <article>
               <div class="container">
+                <?php if ($page['highlighted']): ?>
+                    <div id="highlighted">
+                      <?php print render($page['highlighted']); ?>
+                    </div>
+                  <?php endif; ?>
                 <?php print render($page['content']); ?>
               </div>
             </article>
