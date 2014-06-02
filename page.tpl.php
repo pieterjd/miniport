@@ -137,6 +137,14 @@
 				  <?php print render($page['header']); ?>
 				</div>
 				<!--End header region-->
+				
+				<!--messages-->
+				<?php if ($messages): ?>
+          <div id="messages" class="row">
+            <?php print $messages; ?>
+          </div> <!-- /.section, /#messages -->
+        <?php endif; ?>
+				<!--end messages-->
 
     
 				<!-- content with left sidebar if necessary-->
