@@ -140,11 +140,23 @@
 				
 				<!--messages-->
 				<?php if ($messages): ?>
-          <div id="messages" class="row">
-            <?php print $messages; ?>
-          </div> <!-- /.section, /#messages -->
+				  <div class="container">
+            <div id="messages" class="row">
+              <?php print $messages; ?>
+            </div> <!-- /.section, /#messages -->
+          </div>
         <?php endif; ?>
 				<!--end messages-->
+				
+				<!--featured-->
+				<?php if ($page['featured']): ?>
+				  <div class="container">
+            <div id="featured" class="row">
+             <?php print render($page['featured']); ?>
+            </div> <!-- /.section, /#featured -->
+          </div>
+        <?php endif; ?>
+				<!--End featured-->
 
     
 				<!-- content with left sidebar if necessary-->
