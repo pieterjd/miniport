@@ -133,20 +133,33 @@
 				</article>
 
     
-				<!-- content with left sidebar-->
-				<div class="row">
-				  <div class="4u"><!--Left sidebard-->
-				    <?php print render($page['sidebar_first']); ?>
-				  </div><!--End left sidebar-->
-				  <div class="8u"><!--Content-->
+				<!-- content with left sidebar if necessary-->
+				<?php if ($page['sidebar_first']): ?>
+          <div class="row">
+            <div class="4u"><!--Left sidebard-->
+              <?php print render($page['sidebar_first']); ?>
+            </div><!--End left sidebar-->
+            <div class="8u"><!--Content-->
+              <article>
+                <div class="container">
+                  <?php print render($page['content']); ?>
+                </div>
+              </article>
+            </div><!--End content-->
+          </div> <!--End of content with left sidebar row-->
+        <?php else: ?>
+          <!-- content only -->
+          <div class="row">
+            
             <article>
               <div class="container">
                 <?php print render($page['content']); ?>
               </div>
             </article>
-          </div><!--End content-->
-        </div> <!--End of content with left sidebar row-->
-			</div>
+          </div> <!--End of content without left sidebar row-->
+        <?php endif; ?>
+        
+			</div> <!-- End div of wrapper element-->
 
 		
 
