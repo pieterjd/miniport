@@ -172,6 +172,25 @@
             </div>
           </div> <!-- /#triptych, /#triptych-wrapper -->
         <?php endif; ?>
+        <!--End of triptych row-->
+        <!--footer columns-->
+        <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
+          <div id="footer-columns" class="row">
+            <div class="3u">
+              <?php print render($page['footer_firstcolumn']); ?>
+            </div>
+            <div class="3u">
+              <?php print render($page['footer_secondcolumn']); ?>
+            </div>
+            <div class="3u">
+              <?php print render($page['footer_thirdcolumn']); ?>
+            </div>
+            <div class="3u">
+              <?php print render($page['footer_fourthcolumn']); ?>
+            </div>
+          </div> <!-- /#footer-columns -->
+        <?php endif; ?>
+        <!--End of footer columns-->
 			</div> <!-- End div of page wrapper element-->
 
 		
