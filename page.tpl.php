@@ -191,6 +191,13 @@
           </div> <!-- /#footer-columns -->
         <?php endif; ?>
         <!--End of footer columns-->
+        <!--Footer-->
+        <?php if ($page['footer']): ?>
+          <div id="footer" class="row">
+            <?php print render($page['footer']); ?>
+          </div> <!-- /#footer -->
+        <?php endif; ?>
+        <!--End of footer-->
 			</div> <!-- End div of page wrapper element-->
 
 		
