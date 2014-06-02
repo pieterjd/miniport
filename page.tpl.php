@@ -188,6 +188,8 @@
                     </div>
                   <?php endif; ?> 
                   
+                  <?php print render($page['help']); ?>
+                  
                   <?php print render($page['content']); ?>
                 </div>
               </article>
@@ -218,6 +220,8 @@
                    <?php print render($tabs); ?>
                   </div>
                 <?php endif; ?> 
+                
+                <?php print render($page['help']); ?>
                   
                 <?php print render($page['content']); ?>
               </div>
