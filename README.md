@@ -4,6 +4,6 @@ An attempt to port a static HTML template file to drupal. Original theme can be 
 
 
 Next up:
-- [ ] Adding the menu
-- [ ] Adding the content regio
+- [X] Adding the menu
+- [X] Adding the content regio
 - [X] Theming the node.tpl.php to add nice icons for tags, date, ...
