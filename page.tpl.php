@@ -159,52 +159,12 @@
 				<!--End featured-->
 
     
-				<!-- content with left sidebar if necessary-->
-				<?php if ($page['sidebar_first']): ?>
-          <div class="row">
-            <div class="4u"><!--Left sidebard-->
-              <?php print render($page['sidebar_first']); ?>
-            </div><!--End left sidebar-->
-            <div class="8u"><!--Content-->
-              <article>
-                <div class="container">
-                  <?php if ($page['highlighted']): ?>
-                    <div id="highlighted">
-                      <?php print render($page['highlighted']); ?>
-                    </div>
-                  <?php endif; ?>
-                  
-                  <?php print render($title_prefix); ?>
-                  <?php if ($title): ?>
-                    <h1 class="title" id="page-title">
-                      <?php print $title; ?>
-                    </h1>
-                  <?php endif; ?>
-                  <?php print render($title_suffix); ?> 
-                  
-                  <?php if ($tabs): ?>
-                    <div class="tabs">
-                     <?php print render($tabs); ?>
-                    </div>
-                  <?php endif; ?> 
-                  
-                  <?php print render($page['help']); ?>
-                  
-                  <?php if ($action_links): ?>
-                    <ul class="action-links">
-                      <?php print render($action_links); ?>
-                    </ul>
-                  <?php endif; ?>
-                  
-                  <?php print render($page['content']); ?>
-                </div>
-              </article>
-            </div><!--End content-->
-          </div> <!--End of content with left sidebar row-->
-        <?php else: ?>
-          <!-- content only -->
-          <div class="row">
-            
+				<!-- content with left sidebar -->
+        <div class="row">
+          <div class="4u"><!--Left sidebar-->
+            <?php print render($page['sidebar_first']); ?>
+          </div><!--End left sidebar-->
+          <div class="8u"><!--Content-->
             <article>
               <div class="container">
                 <?php if ($page['highlighted']): ?>
@@ -217,9 +177,9 @@
                 <?php if ($title): ?>
                   <h1 class="title" id="page-title">
                     <?php print $title; ?>
-                </h1>
+                  </h1>
                 <?php endif; ?>
-                <?php print render($title_suffix); ?>  
+                <?php print render($title_suffix); ?> 
                 
                 <?php if ($tabs): ?>
                   <div class="tabs">
@@ -234,12 +194,14 @@
                     <?php print render($action_links); ?>
                   </ul>
                 <?php endif; ?>
-                  
+                
                 <?php print render($page['content']); ?>
               </div>
             </article>
-          </div> <!--End of content without left sidebar row-->
-        <?php endif; ?>
+          </div><!--End content-->
+        </div> 
+        <!--End of content with left sidebar row-->
+        
         <!-- the triptych part -->
         <?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>
           <div class="row">
